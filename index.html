@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Digital Marketing Agency</title>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PP6M4CDS');</script>
-  <!-- End Google Tag Manager -->
-  <style>
-    body { font-family: Arial, sans-serif; padding: 0; margin: 0; background: #f4f4f4; }
-    header, footer { background-color: #1a1a1a; color: #fff; padding: 20px; text-align: center; }
-    .hero { padding: 100px 20px; background: #0099cc; text-align: center; color: white; }
-    .cta-btn { background: #fff; color: #0099cc; padding: 15px 30px; border: none; cursor: pointer; font-size: 18px; margin-top: 20px; }
-    .link-btn { text-decoration: none; color: #0099cc; margin-top: 20px; display: block; }
-    .section { padding: 60px 20px; text-align: center; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Agency</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light gray background */
+        }
+        /* Custom styles for scroll depth tracking */
+        .scroll-tracker {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            z-index: 1000;
+            display: none; /* Hidden by default, shown when scroll depth is active */
+        }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PP6M4CDS');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PP6M4CDS"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PP6M4CDS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-  <header>
-    <h1>BrightEdge Digital</h1>
-    <p>Your Growth, Our Strategy</p>
-  </header>
+    <div class="min-h-screen flex flex-col">
+        <!-- Navigation Bar -->
+        <nav class="bg-white shadow-md p-4 sticky top-0 z-50">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-indigo-700" onclick="showPage('landing')">DigitalPro</a>
+                <div class="space-x-4">
+                    <button class="text-gray-700 hover:text-indigo-700 font-medium px-3 py-2 rounded-md" onclick="showPage('landing')">Home</button>
+                    <button class="text-gray-700 hover:text-indigo-700 font-medium px-3 py-2 rounded-md" onclick="showPage('services')">Services</button>
+                    <button class="text-gray-700 hover:text-indigo-700 font-medium px-3 py-2 rounded-md" onclick="showPage('contact')">Contact Us</button>
+                </div>
+            </div>
+        </nav>
 
-  <section class="hero">
-    <h2>Grow Your Business With Digital Solutions</h2>
-    <button class="cta-btn">Get a Free Audit</button><br />
-    <a href="services.html" class="link-btn">Explore Our Services →</a>
-  </section>
-
-  <section class="section">
-    <h3>Download Our Service Brochure</h3>
-    <a href="brochure.pdf" download class="link-btn">📄 Download Brochure</a>
-  </section>
-
-  <footer>
-    <p>© 2025 BrightEdge Digital. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+        <!-- Main Content Area -->
+        <main class="flex-grow container mx-auto p-6">
